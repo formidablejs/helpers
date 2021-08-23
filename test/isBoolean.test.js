@@ -2,16 +2,12 @@ const { isBoolean } = require('../lib');
 
 describe('Test the isBoolean helper method.', () => {
 
-  test('Should return true if object is boolean', (done) => {
+  test('Should return true if object is boolean', () => {
     expect(isBoolean(true)).toBe(true);
-
-    done();
   });
 
-  test('Should return false if object is not a boolean', (done) => {
+  test('Should return false if object is not a boolean', () => {
     expect(isBoolean({})).toBe(false);
-
-    done();
   });
 
 });

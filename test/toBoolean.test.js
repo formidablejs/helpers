@@ -19,12 +19,10 @@ describe('Test the toBoolean helper method.', () => {
     done();
   });
 
-  test('Should throw an error if the value cannot be converted', (done) => {
+  test('Should throw an error if the value cannot be converted', () => {
     expect(() => {
       toBoolean(null);
     }).toThrow(BooleanCastError);
-
-    done();
   });
 
 });
