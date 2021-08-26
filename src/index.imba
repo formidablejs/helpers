@@ -1,5 +1,6 @@
 exports.asObject = require './asObject'
 exports.config = require './config'
+exports.dot = require './dotNotation'
 exports.dotNotation = require './dotNotation'
 exports.env = require './env'
 exports.isArray = require './isArray'
