@@ -26,6 +26,8 @@ Formidable includes a variety of "helper" functions. Many of these functions are
 The `asObject` method, converts a custom object into a JavaScript object:
 
 ```js
+import { asObject } from '@formidablejs/helpers'
+
 const object = asObject(customObject)
 ```
 
@@ -34,6 +36,8 @@ const object = asObject(customObject)
 The `config` method gets the value of a configuration variable. The configuration values are accessed using "dot" syntax, which includes the name of the file and the option you wish to access. A default value may be specified and is returned if the configuration option does not exist:
 
 ```js
+import { config } from '@formidablejs/helpers'
+
 const appName = config('app.name')
 
 const appName = config('app.name', 'Something else')
@@ -44,6 +48,8 @@ const appName = config('app.name', 'Something else')
 The `dotNotation` method turns an object into a single level value that uses "dot" notation to indicate depth:
 
 ```js
+import { dotNotation } from '@formidablejs/helpers'
+
 const object = {
     app: {
         locale: 'en'
@@ -53,11 +59,27 @@ const object = {
 const appName = dotNotation(object, 'app.locale')
 ```
 
+You may also use `dot`, an alias of `dotNotation`:
+
+```js
+import { dot } from '@formidablejs/helpers'
+
+const object = {
+    app: {
+        locale: 'en'
+    }
+}
+
+const appName = dot(object, 'app.locale')
+```
+
 ### `env`
 
 The `env` method retrieves the value of an environment variable or returns a default value:
 
 ```js
+import { env } from '@formidablejs/helpers'
+
 const appName = env('APP_URL')
 
 const appName = env('APP_URL', 'http://localhost:3000')
@@ -68,6 +90,8 @@ const appName = env('APP_URL', 'http://localhost:3000')
 The `isArray` helper checks if the given variable is a valid `Array`:
 
 ```py
+import { isArray } from '@formidablejs/helpers'
+
 if isArray([])
     # do something
 
@@ -78,6 +102,8 @@ if isArray([])
 The `isBoolean` helper checks if the given variable is a valid `Boolean`:
 
 ```py
+import { isBoolean } from '@formidablejs/helpers'
+
 if isBoolean(variable)
     # do something
 
@@ -88,6 +114,8 @@ if isBoolean(variable)
 The `isClass` helper checks if the given variable is a valid `Class`:
 
 ```py
+import { isClass } from '@formidablejs/helpers'
+
 if isClass(variable)
     # do something
 
@@ -98,6 +126,8 @@ if isClass(variable)
 The `isFunction` helper checks if the given variable is a valid `Function`:
 
 ```py
+import { isFunction } from '@formidablejs/helpers'
+
 if isFunction(variable)
     # do something
 
@@ -108,6 +138,8 @@ if isFunction(variable)
 The `isNumber` helper checks if the given variable is a valid `Number`:
 
 ```py
+import { isNumber } from '@formidablejs/helpers'
+
 if isNumber(variable)
     # do something
 
@@ -118,6 +150,8 @@ if isNumber(variable)
 The `isObject` helper checks if the given variable is a valid `Object`:
 
 ```py
+import { isObject } from '@formidablejs/helpers'
+
 if isObject(variable)
     # do something
 
@@ -128,6 +162,8 @@ if isObject(variable)
 The `isString` helper checks if the given variable is a valid `String`:
 
 ```py
+import { isString } from '@formidablejs/helpers'
+
 if isString(variable)
     # do something
 
@@ -138,6 +174,8 @@ if isString(variable)
 The `slug` helper converts the given string into a slug:
 
 ```py
+import { slug } from '@formidablejs/helpers'
+
 slug('Hello world', '-') # hello-world
 ```
 
@@ -146,6 +184,8 @@ slug('Hello world', '-') # hello-world
 The `toBoolean` helper converts the given variable into a `Boolean` value:
 
 ```py
+import { toBoolean } from '@formidablejs/helpers'
+
 toBoolean('true') # true
 
 toBoolean(true)   # true
@@ -158,6 +198,8 @@ toBoolean(1)      # true
 The `wildcard` helper checks if the given variable matches a wildcard:
 
 ```py
+import { wildcard } from '@formidablejs/helpers'
+
 wildcard('/user/*/edit', '/user/1/edit') # true
 
 wildcard('/tasks/*', 'tasks/learn-imba') # true
@@ -168,6 +210,8 @@ wildcard('/tasks/*', 'tasks/learn-imba') # true
 The `without` helper removes specified data from the given `object`:
 
 ```py
+import { without } from '@formidablejs/helpers'
+
 without({
     name: 'Donald'
     city: 'East Rand'
