@@ -168,7 +168,7 @@ wildcard('/tasks/*', 'tasks/learn-imba') # true
 The `without` helper removes specified data from the given `object`:
 
 ```py
-wildcard({
+without({
     name: 'Donald'
     city: 'East Rand'
 }, ['city'])
