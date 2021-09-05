@@ -1,7 +1,7 @@
 {
   "name": "@formidablejs/helpers",
   "version": "0.0.1-rc1",
-  "description": "Helper function for Formidable",
+  "description": "Helper functions for Formidable",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "scripts": {
@@ -17,7 +17,7 @@
     "make-badges": "istanbul-badges-readme",
     "commit": "npm run test:cov && npm run make-badges && git add 'README.md'"
   },
-  "author": "Donald Pakkies",
+  "author": "Donald Pakkies <donaldpakkies@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
