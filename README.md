@@ -4,9 +4,9 @@ Formidable Helpers
 Helper functions for Formidable.
 
 ![Status](https://github.com/formidablejs/helpers/actions/workflows/test.yml/badge.svg)
-![Statements](https://img.shields.io/badge/statements-98.45%25-brightgreen.svg)
+![Statements](https://img.shields.io/badge/statements-97.87%25-brightgreen.svg)
 ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg)
-![Lines](https://img.shields.io/badge/lines-98.29%25-brightgreen.svg)
+![Lines](https://img.shields.io/badge/lines-97.66%25-brightgreen.svg)
 ## Install
 
 This package is automatically installed with the Formidable Framework.
@@ -178,6 +178,21 @@ import { slug } from '@formidablejs/helpers'
 
 slug('Hello world', '-') # hello-world
 ```
+
+### `strRandom`
+
+The `strRandom` helper generates a random string:
+
+```py
+import { strRandom } from '@formidablejs/helpers'
+
+strRandom() # bfd809fc
+
+# with custom length
+strRandom(40) # 485f8c73737030df7872e2c3e5e2d3b0eb1d769f
+```
+
+> Note, `length` must be divisible by 2.
 
 ### `toBoolean`
 

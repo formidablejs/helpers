@@ -14,7 +14,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:ci": "jest --ci --runInBand --coverage",
-    "make-badges": "istanbul-badges-readme"
+    "make-badges": "istanbul-badges-readme",
+    "commit": "npm run test:cov && npm run make-badges && git add 'README.md'"
   },
   "author": "Donald Pakkies",
   "license": "MIT",
@@ -28,11 +29,6 @@
     "imba": "^2.0.0-alpha.165",
     "jest": "^27.0.6",
     "typescript": "^4.3.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test:cov && npm run make-badges && git add 'README.md'"
-    }
   },
   "jest": {
     "coverageReporters": [
