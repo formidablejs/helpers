@@ -1,6 +1,9 @@
 {
-  "include": ["lib/*"],
+  "include": [
+    "lib/*"
+  ],
   "compilerOptions": {
+    "skipLibCheck": true,
     "allowJs": true,
     "declaration": true,
     "emitDeclarationOnly": true,
