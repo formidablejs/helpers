@@ -1,17 +1,5 @@
-exports.asObject = require './asObject'
-exports.config = require './config'
-exports.dot = require './dotNotation'
-exports.dotNotation = require './dotNotation'
-exports.env = require './env'
-exports.isArray = require './isArray'
-exports.isBoolean = require './isBoolean'
-exports.isClass = require './isClass'
-exports.isFunction = require './isFunction'
-exports.isNumber = require './isNumber'
-exports.isObject = require './isObject'
-exports.isString = require './isString'
-exports.slug = require './slug'
-exports.strRandom = require './strRandom'
-exports.toBoolean = require './toBoolean'
-exports.wildcard = require './wildcard'
-exports.without = require './without'
+import HelpersServiceResolver from './HelpersServiceResolver'
+
+export {
+	HelpersServiceResolver
+}
