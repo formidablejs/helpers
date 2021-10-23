@@ -1,6 +1,6 @@
 {
   "name": "@formidablejs/helpers",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.1",
   "description": "Global helper functions for Formidable",
   "main": "lib/index.js",
   "types": "index.d.ts",
@@ -15,7 +15,7 @@
   "author": "Donald Pakkies <donaldpakkies@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "@formidablejs/framework": "0.x.x.x"
+    "@formidablejs/framework": "0.x.x"
   },
   "devDependencies": {
     "@formidablejs/framework": "^0.6.2-alpha.1",
